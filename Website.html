@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Implementing C on HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .code-container {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        h3, h4 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h3>To Print Hello World</h3>
+    <div class="code-container"> 
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+        </pre>
+        <hr>
+        <h4>Output of the code:</h4>
+        <img src="Uno.jpeg" alt="Hello World" width="500" height="333">
+    </div>
+
+    <h3>Factorial Program</h3>
+    <div class="code-container"> 
+        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, i;
+    unsigned long long factorial = 1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    if (n < 0)
+        printf("Factorial of a negative number doesn't exist.\n");
+    else {
+        for (i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        printf("Factorial of %d = %llu\n", n, factorial);
+    }
+    return 0;
+}
+        </pre>
+        <hr>
+        <h4>Output of the code:</h4>
+        <img src="Dos.jpeg" alt="Factorials" width="500" height="333">
+    </div>
+</body>
+</html>
